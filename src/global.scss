@@ -1,0 +1,21 @@
+$default_color: rgba(185,111,4,255);
+$light_color: rgb(228, 228, 228);
+
+html {
+    scroll-behavior: smooth;
+}
+.btn{
+    background-color: $default_color !important;
+    display: block !important;
+    border: none !important;
+    border-radius: 20px !important;
+    height: 40px;
+}
+
+@import './Containers/Home/style.scss';
+@import './Containers/Home/style.mob.scss';
+@import './Containers/Nav/style.scss';
+@import './Containers/Nav/style.mob.scss';
+
+@import 'aos/dist/aos.css';
+@import 'antd/dist/antd.css';
