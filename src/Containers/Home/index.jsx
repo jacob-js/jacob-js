@@ -27,14 +27,13 @@ export function HomePage(){
                             }}
                         />
                    </div>
-                   <div className="intro-name">Jacob Developer</div>
-                   <div className="intro-poste">Your software engineer based in Goma</div>
+                   <div className="intro-name">Merci Jacob</div>
+                   <div className="intro-poste">A software developer based in DRC</div>
                    <div className="div-socials">
                        <div> <a href="https://www.linkedin.com/in/merci-jacob-1b9776190/" target="_blank" rel="noopener noreferrer"> <LinkedinOutlined /> </a> </div>
                        <div> <a href="https://github.com/jacob-js" target="_blank" rel="noopener noreferrer"><GithubOutlined /></a> </div>
                        <div> <a href="https://github.com/jacob-js" target="_blank" rel="noopener noreferrer"><TwitterOutlined /></a> </div>
-                       <div> <a href="https://github.com/jacob-js" target="_blank" rel="noopener noreferrer"><InstagramOutlined /></a> </div>
-                       <div> <a href="https://github.com/jacob-js" target="_blank" rel="noopener noreferrer"><FacebookOutlined /></a> </div>
+                       <div> <a href="https://www.instagram.com/merci_jacob" target="_blank" rel="noopener noreferrer"><InstagramOutlined /></a> </div>
                    </div>
                </div>
            </div>
