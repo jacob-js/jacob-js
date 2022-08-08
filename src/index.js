@@ -5,7 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import Routes from './Routes';
 import axios from 'axios';
 
-axios.defaults.baseURL = 'http://127.0.0.1:8000';
+axios.defaults.baseURL = 'https://jacob-dev.herokuapp.com';
 window.location.hash = '';
 window.scrollTo(0, 0);
 
