@@ -6,6 +6,8 @@ import Routes from './Routes';
 import axios from 'axios';
 
 axios.defaults.baseURL = 'http://127.0.0.1:8000';
+window.location.hash = '';
+window.scrollTo(0, 0);
 
 ReactDOM.render(
   <React.StrictMode>

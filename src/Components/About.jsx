@@ -13,7 +13,7 @@ export default function About() {
             <div className='divider'>Who I am <div className='line'></div></div>
             <div className="title">About me</div>
             <p>
-            I’m Jacob Merci, a professional and talented software developer with front end, backend development and data science skills. I am passionate about leveraging my diverse backgrounds to decipher challenging problems and create delightful experiences. I honed my skills at web and mobile development, web scraping.
+            I’m Jacob Merci, a professional and talented software developer with frontend & backend skills. I am passionate about leveraging my diverse backgrounds to decipher challenging problems and create delightful experiences. I honed my skills at web and mobile development.
 
             My main programing languages are Javascript and python.
 

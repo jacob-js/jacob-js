@@ -1,9 +1,46 @@
 import { EnvironmentOutlined, MailOutlined, PhoneOutlined, SendOutlined } from '@ant-design/icons'
-import { Button } from 'antd'
-import React from 'react'
+import { Button, Modal } from 'antd'
+import React, { useEffect, useState } from 'react'
+import usePostData from '../hooks/usePost'
 import Input, { TextArea } from './Input'
 
 function Contact() {
+    const [fullname, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    const [subject, setSubject] = useState('');
+    const { isSuccess, loading, error, submit } = usePostData('/contacts/');
+
+    useEffect(() =>{
+        (() =>{
+            if(isSuccess) {
+                setName('');
+                setEmail('');
+                setMessage('');
+                setSubject('');
+                Modal.success({
+                    title: 'Success',
+                    content: 'Your message has been sent successfully',
+                });
+                window.location.hash = '#';
+                window.scrollTo(0, 0);
+            };
+            if(error) {
+                Modal.error({
+                    title: 'Error',
+                    content: "Something went wrong, please try again later",
+                })
+            }
+        })();
+    }, [isSuccess, error]);
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if(fullname && email && message && subject) {
+            submit({ full_name: fullname, email, message, subject });
+        }
+    };
+
   return (
     <div className='contact' id='contact'>
         <div className="header">
@@ -32,15 +69,15 @@ function Contact() {
                     <a className='text' href="tel:+243977426917">+243977426917</a>
                 </div>
             </div>
-            <div className="form">
-                <Input placeholder='Your full name' />
+            <form className="form" onSubmit={handleSubmit}>
                 <div className="flex-fields">
-                    <Input placeholder='Your email' type="email" />
-                    <Input placeholder='Your phone number' type="tel" />
+                    <Input placeholder='Your full name' value={fullname} onChange={e =>setName(e.target.value)} />
+                    <Input placeholder='Your email' value={email} type="email" onChange={e =>setEmail(e.target.value)} />
                 </div>
-                <TextArea placeholder='Your message' />
-                <Button type='primary' className='btn btn-submit' icon={<SendOutlined />}>Envoyer</Button>
-            </div>
+                <Input placeholder='Subject' value={subject} onChange={e =>setSubject(e.target.value)} />
+                <TextArea placeholder='Your message' value={message} onChange={e =>setMessage(e.target.value)} />
+                <Button type='primary' className='btn btn-submit' loading={loading} icon={<SendOutlined />} htmlType="submit">Send</Button>
+            </form>
         </div>
     </div>
   )

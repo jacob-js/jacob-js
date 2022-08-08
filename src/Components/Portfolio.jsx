@@ -27,7 +27,7 @@ function Portfolio() {
                         <div className="bg"></div>
                         <div className="info">
                             <div className="name">{project.title}</div>
-                            <div className="type">{project.type}</div>
+                            <div className="type">{project.caption}</div>
                         </div>
                     </div>
                 ))

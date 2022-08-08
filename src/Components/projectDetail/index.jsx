@@ -18,11 +18,13 @@ function ProjectDetail({ project, isShown, setIsShown }) {
             <div className="info">Project status : {project.status}</div>
             <div className="info">duration : <ClockCircleOutlined /> {project.execution_time}</div>
             <div className="info">Stack : {project.stack}</div>
-            <div className="info">Used technologies : {project.technologies?.map((tech, index) =>(
+            <div className="info">Technologies : {project.technologies?.map((tech, index) =>(
                 <span> {tech.name} {index+1 !== project.technologies.length ? ",": ''} </span>
             ))}</div>
         </div>
-        <Button className='btn preview' type='primary' icon={<EyeOutlined />}>Live demo</Button>
+        <Button className='btn preview' type='primary' icon={<EyeOutlined />} onClick={() =>{
+            window.open(project.live_link, '_blank')
+        }}>Live demo</Button>
     </Modal>
   )
 }
