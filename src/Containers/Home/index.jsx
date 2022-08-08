@@ -1,6 +1,6 @@
 import { Avatar } from 'antd';
-import img from '../../Assets/imgs/jacob.jfif';
-import { FacebookOutlined, GithubOutlined, InstagramOutlined, LinkedinOutlined, TwitterOutlined } from '@ant-design/icons';
+import img from '../../Assets/imgs/profile.jpeg';
+import { GithubOutlined, InstagramOutlined, LinkedinOutlined, TwitterOutlined } from '@ant-design/icons';
 import TypewriterComponent from 'typewriter-effect';
 import About from '../../Components/About';
 import Skills from '../../Components/Skills';
@@ -32,7 +32,7 @@ export function HomePage(){
                    <div className="div-socials">
                        <div> <a href="https://www.linkedin.com/in/merci-jacob-1b9776190/" target="_blank" rel="noopener noreferrer"> <LinkedinOutlined /> </a> </div>
                        <div> <a href="https://github.com/jacob-js" target="_blank" rel="noopener noreferrer"><GithubOutlined /></a> </div>
-                       <div> <a href="https://github.com/jacob-js" target="_blank" rel="noopener noreferrer"><TwitterOutlined /></a> </div>
+                       <div> <a href="https://twitter.com/jacob1dev" target="_blank" rel="noopener noreferrer"><TwitterOutlined /></a> </div>
                        <div> <a href="https://www.instagram.com/merci_jacob" target="_blank" rel="noopener noreferrer"><InstagramOutlined /></a> </div>
                    </div>
                </div>
