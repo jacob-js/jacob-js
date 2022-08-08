@@ -1,16 +1,9 @@
 import React from 'react'
-
-const projects = [
-    {
-        name: 'Project 1',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.',
-        image: 'https://picsum.photos/300/300',
-        type: 'Mobile Application',
-        technologies: ['React Native', 'Node.js', 'Express.js', 'MongoDB', 'AWS'],
-    }
-]
+import useFetchData from '../hooks/fetchData'
 
 function Portfolio() {
+    const { data: projects, loading } = useFetchData('/projects')
+
   return (
     <div className='portfolio' id='portfolio'>
         <div className="header">
@@ -22,13 +15,13 @@ function Portfolio() {
         </div>
         <div className="projects">
             {
-                [1,2,3,4,5,6].map((project, index) => (
+                projects.map((project, index) => (
                     <div className="project" key={index} data-aos="fade-up">
-                        <img src={projects[0].image} alt="" />
+                        <img src={project.cover} alt="" />
                         <div className="bg"></div>
                         <div className="info">
-                            <div className="name">{projects[0].name}</div>
-                            <div className="type">{projects[0].type}</div>
+                            <div className="name">{project.title}</div>
+                            <div className="type">{project.type}</div>
                         </div>
                     </div>
                 ))
