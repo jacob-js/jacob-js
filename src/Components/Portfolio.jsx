@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import useFetchData from '../hooks/fetchData'
+import ProjectDetail from './projectDetail';
 
 function Portfolio() {
-    const { data: projects, loading } = useFetchData('/projects')
+    const { data: projects, loading } = useFetchData('/projects');
+    const [toShow, setToShow] = useState({});
+    const [isShown, setIsShown] = useState(false);
 
   return (
     <div className='portfolio' id='portfolio'>
@@ -16,7 +19,10 @@ function Portfolio() {
         <div className="projects">
             {
                 projects.map((project, index) => (
-                    <div className="project" key={index} data-aos="fade-up">
+                    <div className="project" key={index} data-aos="fade-up" onClick={() =>{
+                        setIsShown(true);
+                        setToShow(project);
+                    }}>
                         <img src={project.cover} alt="" />
                         <div className="bg"></div>
                         <div className="info">
@@ -27,6 +33,7 @@ function Portfolio() {
                 ))
             }
         </div>
+        <ProjectDetail project={toShow} isShown={isShown} setIsShown={setIsShown} />
     </div>
   )
 }
