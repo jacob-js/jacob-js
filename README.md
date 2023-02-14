@@ -9,7 +9,6 @@ With almost 3 years of experience in this industry, I've been coding with Python
 * 🌍  I'm based in Congo CD
 * 🖥️  See my portfolio at [https://jacobdeveloper.com](http://jacobdeveloper.com)
 * ✉️  You can contact me at [mercihabam@gmail.com](mailto:mercihabam@gmail.com)
-* 🧠  I'm learning Web3
 * 🤝  I'm open to collaborating on interesting projects
 
 <a href="https://www.twitter.com/jacob1dev" target="_blank" rel="noreferrer"><img
