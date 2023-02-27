@@ -10,7 +10,7 @@ As a hard-worker self-taught developer, I work hard towards achieving the techni
 * 🖥️  See my portfolio at [https://jacobdeveloper.com](http://jacobdeveloper.com)
 * ✉️  Drop me an email at [mercihabam@gmail.com](mailto:mercihabam@gmail.com)
 * I work as a freelancer
-* I will thrilled collaboring with you on your project
+* I will be thrilled collaboring with you on your project
 
 <a href="https://www.twitter.com/jacob1dev" target="_blank" rel="noreferrer"><img
 src="https://img.shields.io/twitter/follow/jacob1dev?logo=twitter&style=for-the-badge&color=0891b2&labelColor=1c1917"
