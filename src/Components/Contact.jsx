@@ -20,7 +20,7 @@ function Contact() {
                 setSubject('');
                 Modal.success({
                     title: 'Success',
-                    content: 'Your message has been sent successfully',
+                    content: 'Thanks for your message, will contact you back shortly',
                 });
                 window.location.hash = '#';
                 window.scrollTo(0, 0);
@@ -56,17 +56,17 @@ function Contact() {
             <div className="details">
                 <div className="detail">
                     <div className="icon"> <EnvironmentOutlined /> </div>
-                    <div className="text">Goma DRC</div>
+                    <div className="text">Kigali, Rwanda</div>
                 </div>
                 <div className="detail">
                     <div className="icon"> <MailOutlined /> </div>
                     <a className='text' href="mailto:contact@jacobdeveloper.com">
-                        contact@jacobdeveloper.com
+                        mercihabam@gmail.com
                     </a>
                 </div>
                 <div className="detail">
                     <div className="icon"> <PhoneOutlined rotate={90} /> </div>
-                    <a className='text' href="tel:+243977426917">+243977426917</a>
+                    <a className='text' href="tel:+250791806500">+250791806500</a>
                 </div>
             </div>
             <form className="form" onSubmit={handleSubmit}>
