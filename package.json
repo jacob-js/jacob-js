@@ -42,8 +42,11 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.13",
     "node-sass": "^8.0.0",
+    "postcss": "^8.4.21",
     "sass": "^1.58.3",
+    "tailwindcss": "^3.2.7",
     "vite": "^4.1.4",
     "vite-plugin-svgr": "^2.4.0",
     "vite-tsconfig-paths": "^4.0.5"
