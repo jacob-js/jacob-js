@@ -1,7 +1,7 @@
 import { DownloadOutlined } from '@ant-design/icons';
 import { Button, Divider } from 'antd';
 import React from 'react'
-import img from '../Assets/imgs/jac_about.jpg';
+import img from '/about.jpg';
 
 export default function About() {
   return (
@@ -20,7 +20,7 @@ export default function About() {
             Being a diligent, hardworking and result oriented guy, I always work towards achieving best result on each project I lay my hands on.
             </p>
 
-            <Button type='primary' className='btn get_cv' icon={<DownloadOutlined />}>Download cv</Button>
+            <Button type='primary' className='btn get_cv mt-5' icon={<DownloadOutlined />}>Download cv</Button>
         </div>
     </div>
   )

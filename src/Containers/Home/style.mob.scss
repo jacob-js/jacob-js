@@ -1,20 +1,18 @@
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .content{
         flex-direction: column;
         padding: 0 0px;
-        padding-top: 60px;
+        padding-top: 60px 0px;
         justify-content: center;
-        height: 660px;
-        &::before{
-            height: 660px;
-        }
+        height: 100vh;
     }
     .div-intro{
         margin-left: 0px;
         text-align: center;
     }
     .greeting{
-        font-size: 14px;
+        font-size: 1rem;
+        @apply mt-5
     }
     .intro-name{
         font-size: 30px;

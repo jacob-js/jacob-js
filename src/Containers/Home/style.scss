@@ -12,19 +12,16 @@
     position: relative;
     top: -80px;
     left: 0;
-    background-image: url('../imgs/bg.jpg');
     background-size: cover;
-    height: 800px;
+    height: 100vh;
     width: 100%;
-    padding: 0 40px;
     padding-top: 60px;
 }
 .content::before
 {
     content: '';
     width: 100%;
-    height: 800px;
-    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
     position: absolute;
     overflow-x: hidden;
     left: 0;
@@ -42,12 +39,13 @@
 .intro-name
 {
     border-bottom: 1px solid white;
-    font-size: 45px;
+    @apply text-5xl
 }
 .intro-poste
 {
     font-weight: 15;
-    font-size: 14px;
+    font-size: 1rem;
+    margin-top: 10px;
 }
 .div-socials
 {
@@ -63,13 +61,8 @@
     transition: .5s;
     color: white;
 }
-.div-socials div a 
-{
-    color: white;
-}
-.div-socials div:hover
-{
-    opacity: 0.5;
+.socials__icon a{
+    @apply text-gray-400 hover:text-white
 }
 
 .divider{
@@ -81,7 +74,7 @@
         height: 2px;
         background-color: $default_color;
         margin-left: 10px;
-        margin-top: 3px;
+        @apply my-3;
         &.l{
             margin-left: 0px;
             margin-right: 10px;
@@ -89,9 +82,7 @@
     }
 }
 .title{
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 15px;
+    @apply text-3xl font-bold mb-5
 }
 .header{
     display: flex;
@@ -102,7 +93,7 @@
 }
 
 .about{
-    padding: 20px 50px;
+    padding: 20px 0px;
     margin-top: -60px;
     display: flex;
     justify-content: space-between;
@@ -144,26 +135,16 @@
             margin-top: 3px;
         }
     }
-    .title{
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 15px;
-    }
 }
 
 .skills{
-    padding: 20px 50px;
-    .title{
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 15px;
-    }
+    padding: 20px 0px;
+    @apply mt-16;
     .tools{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         border-radius: 20px;
-        margin: -20px;
         .tool{
             width: 130px;
             height: 100px;
@@ -184,8 +165,9 @@
 }
 
 .portfolio{
-    padding: 50px 50px;
+    padding: 50px 0px;
     text-align: center;
+    @apply mt-16
 }
 .portfolio .projects{
     display: flex;
@@ -244,15 +226,13 @@
 }
 
 .contact{
-    padding: 50px 50px;
-    .title{
-        margin-bottom: 5px;
-    }
+    padding: 50px 0px;
     .body{
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: 40px;
+        @apply my-16
     }
 }
 .contact .body .details{
@@ -262,19 +242,19 @@
     display: flex;
     align-items: center;
     &:not(:last-child){
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 }
 .detail .icon{
     width: 50px;
     height: 50px;
     margin-right: 10px;
-    background-color: rgb(228, 228, 228);
     font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    @apply bg-gray-700
 }
 .detail .text{
     color: gray;

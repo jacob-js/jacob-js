@@ -1,10 +1,7 @@
 .nav
 {
     width: 100%;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 20px 0px;
     font-size: 18px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
@@ -13,14 +10,19 @@
     top: 0;
     z-index: 999;
     transition: all .5s ease;
-    background-color: rgba(151, 151, 151, 0.2);
+    @apply bg-gray-700 bg-opacity-50
+}
+.nav__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 .nav.fixed{
     position: fixed;
     background-color: rgba(0, 0, 0, 0.2);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
-    .nav-item{ color: black; }
 }
 .nav-part-2
 {
@@ -52,9 +54,8 @@ button.nav-item.contact{
 }
 .footer{
     width: 100%;
-    min-height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $light_color;
+    @apply bg-gray-700 h-32 px-7 md:px-0 text-center text-xs md:text-sm
 }

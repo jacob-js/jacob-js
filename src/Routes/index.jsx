@@ -9,7 +9,7 @@ function Routes(){
 
     useEffect(() =>{
         AOS.init({
-            duration: 800
+            duration: 300
         });
     });
 
