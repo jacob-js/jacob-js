@@ -4,13 +4,13 @@ Hi 👋 My name is Merci Jacob
 I'm A Full stack developer
 --------------------
 
-With almost 3 years of experience in this industry, I've been coding with Python and Javascript on my personnal projects and some freelancing jobs.
-As a hard-worker self-taught developer, I work hard towards achieving the technical goals of the project on which I'm working
+I'm a full-stack developer with 3 years of experience in the tech area, I code especially with  Javascript and Python, using different frameworks and libraries of these languages to build robust and scalable software solutions.
+I work hard towards achieving the technical goals of the project on which I'm working. The tools I mostly use to achieve this are React, React Native, Next.js, Node.js & Express.js, and Django.
+I have also a solid knowledge of problem-solving which helps me to deal with and write complex and robust algorithms.
 
 * 🖥️  See my portfolio at [https://jacobdeveloper.com](http://jacobdeveloper.com)
 * ✉️  Drop me an email at [mercihabam@gmail.com](mailto:mercihabam@gmail.com)
-* I work as a freelancer
-* I will be thrilled collaborating with you on your project
+* I can work as a freelancer to help you leverage your project
 
 <a href="https://www.twitter.com/jacob1dev" target="_blank" rel="noreferrer"><img
 src="https://img.shields.io/twitter/follow/jacob1dev?logo=twitter&style=for-the-badge&color=0891b2&labelColor=1c1917"
