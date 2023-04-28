@@ -16,7 +16,12 @@ export default function About() {
               I'm a full-stack developer with 3 years of experience in the tech area, I code especially with Javascript and Python, using different frameworks and libraries of these languages to build robust and scalable software solutions. I work hard towards achieving the technical goals of the project on which I'm working. The tools I mostly use to achieve this are React, React Native, Next.js, Node.js & Express.js, and Django. I have also a solid foundation in problem-solving and critical thinking that helps me to deal with and write complex and robust algorithms.
             </p>
 
-            <Button type='primary' className='btn get_cv mt-5' icon={<DownloadOutlined />}>Download cv</Button>
+            <Button
+             type='primary'
+             className='btn get_cv mt-5'
+             icon={<DownloadOutlined />}
+             onClick={() =>window.open('https://drive.google.com/file/d/1FUixGlv27kH4cL9_Y829DxzCZ4mbnqUp/view?usp=sharing', '_blank')}
+            >Download CV</Button>
         </div>
     </div>
   )
