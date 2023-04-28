@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import useFetchData from '../hooks/fetchData'
 import ProjectDetail from './projectDetail';
+import { Spin } from 'antd';
 
 function Portfolio() {
     const { data: projects, loading } = useFetchData('/projects');
@@ -8,7 +9,7 @@ function Portfolio() {
     const [isShown, setIsShown] = useState(false);
 
   return (
-    <div className='portfolio' id='portfolio'>
+    <div className='portfolio min-h-screen flex flex-col justify-center items-center' id='portfolio'>
         <div className="header">
             <div className="divider">
                 <div className="line l"></div>
@@ -18,6 +19,8 @@ function Portfolio() {
         </div>
         <div className="projects">
             {
+                loading ?
+                <Spin />:
                 projects.map((project, index) => (
                     <div className="project" key={index} data-aos="fade-up" onClick={() =>{
                         setIsShown(true);

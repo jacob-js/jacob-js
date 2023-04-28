@@ -1,10 +1,11 @@
 import React from 'react';
 import useFetchData from '../hooks/fetchData';
+import { Spin } from 'antd';
 
 function Skills() {
-    const { data: tools } = useFetchData('/projects/skills');
+    const { data: tools, loading } = useFetchData('/projects/skills');
   return (
-    <div className='skills' id='skills'>
+    <div className='skills min-h-screen flex flex-col justify-center items-center' id='skills'>
         <div className="header">
             <div className="divider">
                 <div className="line l"></div>
@@ -14,6 +15,8 @@ function Skills() {
         </div>
         <div className="tools">
             {
+                loading ?
+                <Spin />:
                 tools.map((tool, index) =>(
                     <div className="tool" key={index} data-aos='fade-up'>
                         <img src={tool.icon} alt="" />

@@ -42,7 +42,7 @@ function Contact() {
     };
 
   return (
-    <div className='contact' id='contact'>
+    <div className='contact min-h-screen flex flex-col justify-center' id='contact'>
         <div className="header">
             <div className="divider"><div className="line l"></div>
                 Contact me <div className="line"></div>
