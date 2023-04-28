@@ -15,7 +15,7 @@ export function HomePage(){
            <Wrapper>
                 <div className="content" id='home'>
                     <div className="div-avatar" data-aos='fade-up'>
-                        <Avatar style={{ border: '2px solid white' }} src={img} className='avatar' size={300} />
+                        <Avatar style={{ border: '2px solid white' }} src='https://avatars.githubusercontent.com/u/68013195?v=4' className='avatar' size={300} />
                     </div>
                     <div className="div-intro space-y-3" data-aos='fade-down'>
                         <div className="greeting">
